@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FinanceIQ — Finance Dashboard
 
 A clean, interactive finance dashboard built with React, TypeScript, Tailwind CSS, Zustand, and Recharts — inspired by the AlignUI design system.
@@ -160,3 +161,6 @@ To reset to defaults, clear your browser's localStorage.
 - All data is **mock/static** — no backend required
 - The project uses `path aliases` — `@/` maps to `src/`
 - Dark mode is toggled globally via the topbar sun/moon button or Settings
+=======
+# finance-dashboard
+>>>>>>> ecf03e4c85001d176c4f537117bd71b9aeb1f149
