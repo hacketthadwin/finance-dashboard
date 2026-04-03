@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary - Blue */
+    --primary-base: 221 83% 53%;
+    --primary-lighter: 221 100% 96%;
+    --primary-light: 221 90% 70%;
+    --primary-dark: 221 73% 40%;
+
+    /* Text */
+    --text-strong-950: 220 14% 10%;
+    --text-sub-600: 220 9% 46%;
+    --text-soft-400: 220 9% 63%;
+    --text-disabled-300: 220 9% 78%;
+    --text-white-0: 0 0% 100%;
+
+    /* Background */
+    --bg-white-0: 0 0% 100%;
+    --bg-weak-50: 220 20% 97%;
+    --bg-soft-200: 220 15% 94%;
+    --bg-sub-300: 220 12% 90%;
+    --bg-strong-950: 220 14% 10%;
+
+    /* Stroke */
+    --stroke-white-0: 0 0% 100%;
+    --stroke-soft-200: 220 15% 91%;
+    --stroke-sub-300: 220 12% 82%;
+    --stroke-strong-950: 220 14% 10%;
+
+    /* Success - Green */
+    --success-base: 142 71% 45%;
+    --success-lighter: 142 76% 96%;
+    --success-light: 142 65% 88%;
+
+    /* Error - Red */
+    --error-base: 0 84% 60%;
+    --error-lighter: 0 86% 97%;
+    --error-light: 0 80% 88%;
+
+    /* Warning - Amber */
+    --warning-base: 38 92% 50%;
+    --warning-lighter: 48 100% 96%;
+    --warning-light: 45 93% 85%;
+
+    /* Information - Blue */
+    --information-base: 217 91% 60%;
+    --information-lighter: 214 100% 97%;
+    --information-light: 213 93% 88%;
+
+    /* Verified - Teal */
+    --verified-base: 172 66% 50%;
+    --verified-lighter: 166 76% 95%;
+
+    /* Feature - Purple */
+    --feature-base: 258 90% 66%;
+    --feature-lighter: 252 100% 97%;
+
+    /* Faded - Gray */
+    --faded-base: 220 9% 56%;
+    --faded-lighter: 220 15% 94%;
+
+    /* Highlighted - Orange */
+    --highlighted-base: 25 95% 58%;
+    --highlighted-lighter: 34 100% 95%;
+
+    /* Away - Yellow-Green */
+    --away-base: 84 82% 46%;
+    --away-lighter: 83 100% 94%;
+
+    /* Scrollbar */
+    --scrollbar-thumb: hsl(220 12% 85%);
+    --scrollbar-track: transparent;
+  }
+
+  .dark {
+    --text-strong-950: 220 14% 96%;
+    --text-sub-600: 220 9% 64%;
+    --text-soft-400: 220 9% 46%;
+    --text-disabled-300: 220 9% 32%;
+    --text-white-0: 220 14% 10%;
+
+    --bg-white-0: 220 16% 10%;
+    --bg-weak-50: 220 14% 13%;
+    --bg-soft-200: 220 12% 16%;
+    --bg-sub-300: 220 10% 22%;
+    --bg-strong-950: 220 14% 96%;
+
+    --stroke-white-0: 220 14% 10%;
+    --stroke-soft-200: 220 12% 18%;
+    --stroke-sub-300: 220 10% 26%;
+    --stroke-strong-950: 220 14% 96%;
+
+    --primary-lighter: 221 60% 15%;
+    --information-lighter: 217 50% 15%;
+    --success-lighter: 142 40% 12%;
+    --error-lighter: 0 40% 14%;
+    --warning-lighter: 38 50% 14%;
+    --verified-lighter: 172 40% 12%;
+    --feature-lighter: 258 40% 14%;
+    --faded-lighter: 220 14% 16%;
+    --highlighted-lighter: 25 50% 14%;
+    --away-lighter: 84 40% 12%;
+  }
+
+  * {
+    @apply border-stroke-soft-200;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-bg-weak-50 text-text-strong-950 font-sans antialiased;
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 9999px;
+  }
+}
+
+@layer utilities {
+  .transition-default {
+    @apply transition-all duration-200 ease-out;
+  }
+
+  .text-subheading-xs {
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+
+  .text-subheading-2xs {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+  }
+}
